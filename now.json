@@ -10,6 +10,11 @@
     { "src": "/builder", "dest": "/builder.html" },
     { "src": "/(?<name>[^/]+).*", "dest": "/api/$name.ts" }
   ],
+  "functions": {
+    "api/test.js": {
+      "memory": 512
+    }
+  },
   "env": {
     "GH_TOKENS": "@badgen-gh-tokens",
     "SENTRY_DSN": "@badgen-sentry-dsn",
